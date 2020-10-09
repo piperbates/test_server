@@ -8,6 +8,10 @@ app.get("/", (req, res) =>{
     res.json ({ hello: "world" });
 });
 
+app.get('/hello', (req, res) => {
+    res.json({ hello: "me" })
+});
+
 app.listen(5000, () => {
     console.log(`*** Server running on http://localhost${PORT} ***`)
 }); 
